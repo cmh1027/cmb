@@ -1,4 +1,4 @@
 *
 !/.gitignore
-!nnunet
-!batchgenerators
+!/nnunet
+!/batchgenerators
