@@ -632,7 +632,7 @@ class NetworkTrainer(object):
         else:
             self.train_loss_MA = self.train_loss_MA_alpha * self.train_loss_MA + (1 - self.train_loss_MA_alpha) * \
                                  self.all_tr_losses[-1]
-    # test
+
     def run_iteration(self, data_generator, do_backprop=True, run_online_evaluation=False):
         data_dict = next(data_generator)
         data = data_dict['data'] # (2, 1, 48, 225, 225)
